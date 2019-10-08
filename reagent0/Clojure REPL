@@ -1,0 +1,161 @@
+(for [x[0 1 2 3 4 5]]
+  [y (* x 3)]
+  y)
+  
+Execution error (ArityException) at nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:79).
+Wrong number of args (3) passed to: clojure.core/for
+(for [x[0 1 2 3 4 5]]
+  :let [y (* x 3)]
+  y)
+  
+Execution error (ArityException) at nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:79).
+Wrong number of args (4) passed to: clojure.core/for
+(for [x [0 1 2 3 4 5]]
+  :let [y (* x 3)]
+  y)
+  
+Execution error (ArityException) at nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:79).
+Wrong number of args (4) passed to: clojure.core/for
+(for [x [0 1 2 3 4 5]]
+  [y (* x 3)]
+  y)
+  
+Execution error (ArityException) at nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:79).
+Wrong number of args (3) passed to: clojure.core/for
+(for [x [0 1 2 3 4 5]
+  [y (* x 3)]]
+  y)
+  
+Syntax error macroexpanding for at (src/cljs/reagent0/core.cljs:1:5).
+for requires an even number of forms in binding vector in user:1
+(for [x [0 1 2 3 4 5]
+  :let [y (* x 3)]]
+  y)
+  
+user=>
+(0 3 6 9 12 15)
+(for [x ])
+Execution error (ArityException) at nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:79).
+Wrong number of args (1) passed to: clojure.core/for
+(def vac0 [1 2 3 4 5])
+user=>
+#'user/vac0
+(def vac0 [1 2 3 4 5])
+user=>
+#'user/vac0
+(def vac0 [1 2 3 4 5])
+user=>
+#'user/vac0
+(def vac0 [1 2 3 4 5])
+(println vac0)
+[1 2 3 4 5]
+user=>
+nil
+(def vac0 [1 2 3 4 5])
+user=>
+#'user/vac0
+(def vac0 [1 2 3 4 5])
+(for [x vac0]
+  x)
+user=>
+(1 2 3 4 5)
+(def vac0 [1 2 3 4 5])
+(for [x vac0]
+  (* x 3) x)
+Execution error (ArityException) at nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:79).
+Wrong number of args (3) passed to: clojure.core/for
+(def vac0 [1 2 3 4 5])
+(for [x vac0]
+  (* x 3))
+user=>
+(3 6 9 12 15)
+(def vac0 [1 2 3 4 5])
+(for [x vac0]
+  [y (* x 3)])
+Syntax error compiling at (src/cljs/reagent0/core.cljs:2:1).
+Unable to resolve symbol: y in this context
+(def vac0 [1 2 3 4 5])
+(for [x vac0]
+  [y (* x 3)] y)
+Execution error (ArityException) at nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:79).
+Wrong number of args (3) passed to: clojure.core/for
+(def vac0 [1 2 3 4 5])
+(for [x vac0]
+  :let [y (* x 3)] y)
+Execution error (ArityException) at nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:79).
+Wrong number of args (4) passed to: clojure.core/for
+(def vac0 [1 2 3 4 5])
+(for [x vac0]
+  :let [y (* x 3)]y)
+Execution error (ArityException) at nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:79).
+Wrong number of args (4) passed to: clojure.core/for
+(def vac0 [1 2 3 4 5])
+(for [x vac0]
+  :let [y (* x 3)]y)
+Execution error (ArityException) at nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:79).
+Wrong number of args (4) passed to: clojure.core/for
+(def vac0 [1 2 3 4 5])
+(for [x vac0]
+  :let [y (* x 3)]
+  y)
+Execution error (ArityException) at nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:79).
+Wrong number of args (4) passed to: clojure.core/for
+(def vac0 [1 2 3 4 5])
+(for [x vac0]
+    :let [y (* x 3)]
+  y)
+Execution error (ArityException) at nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:79).
+Wrong number of args (4) passed to: clojure.core/for
+(def vac0 [1 2 3 4 5])
+(for [x vac0]
+    :let [y (* x 3)]
+  )
+Execution error (ArityException) at nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:79).
+Wrong number of args (3) passed to: clojure.core/for
+(def vac0 [1 2 3 4 5])
+(for [x vac0]
+    :let [y (* x 3)]
+  )
+Execution error (ArityException) at nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:79).
+Wrong number of args (3) passed to: clojure.core/for
+(def vac0 [1 2 3 4 5])
+(for [x vac0]
+    :let [y (* x 3)]
+  )
+Execution error (ArityException) at nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:79).
+Wrong number of args (3) passed to: clojure.core/for
+(defn fizzbuzz [x])
+user=>
+#'user/fizzbuzz
+(defn fizzbuzz [x]
+  (println x))
+
+(fizzbuzz "foo")
+foo
+user=>
+nil
+(defn fizzbuzz [x]
+  (println x))
+
+(fizzbuzz "foobar")
+foobar
+user=>
+nil
+
+
+(fizzbuzz "foobar")
+foobar
+user=>
+nil
+(defn fizzbuzz [x]
+  (def vac0 (range 0 x)))
+
+(fizzbuzz "foobar")
+Execution error (ClassCastException) at user/fizzbuzz (form-init408151766070709726.clj:2).
+class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+--------------------
+(defn fizzbuzz [x]
+  (def vac0 (range 0 x))
+  vac0)
+
+(fizzbuzz 15)
